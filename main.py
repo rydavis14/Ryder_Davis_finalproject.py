@@ -8,12 +8,14 @@ I want to create mobs that are tagrets in the goal.
 '''
 
 # Base code helped by https://trinket.io/python/909d6c5804
+# Chat GBT
+# Youtube
 
 import random
 direction=["left","middle","right"]
 totalPenalties=0
-userTeamScore=0
-computerTeamScore=0
+PlayerScore=0
+CpuScore=0
 print("------WELCOME TO THE PYTHON PENALTY SHOOTOUT------")
 print("The options you can choose are left,right or middle")
 
@@ -44,46 +46,46 @@ def __int__(self):
 
 def penaltyFor():
     global totalPenalties
-    global userTeamScore
+    global PlayerScore
     totalPenalties+=1
     playerShotDirection=input("Pick your spot:").lower()
-    keeperDive=random.choice(direction)
-    print("The keeper dives to the "+ keeperDive.upper())
-    if playerShotDirection=="left" and keeperDive=="right":
+    TendeyDive=random.choice(direction)
+    print("The Tendey dives to the "+ TendeyDive.upper())
+    if playerShotDirection=="left" and TendeyDive=="right":
         print ( "it's a save!")
-    elif playerShotDirection=="right" and keeperDive=="left":
+    elif playerShotDirection=="right" and TendeyDive=="left":
         print ("it's a save!")
-    elif playerShotDirection=="middle" and keeperDive=="middle":
+    elif playerShotDirection=="middle" and TendeyDive=="middle":
         print ("it's a save!")
     else:
         print("It's a GOOOAAALLLLL!!!!!!!")
-        userTeamScore+=1
+        PlayerScore+=1
 
 def penaltyAgainst():
     global totalPenalties
-    global computerTeamScore
+    global CpuScore
     totalPenalties+=1
-    playerKeeperDive=input("Choose dive direction:").lower()
+    playerTendeyDive=input("Choose dive direction:").lower()
     computerShotDirection=random.choice(direction)
     print ("The computer hits the ball to the "+computerShotDirection)
-    if computerShotDirection=="left" and playerKeeperDive=="right":
+    if computerShotDirection=="left" and playerTendeyDive=="right":
         print ( "It's a SSSAVVVVEEEEE!!!!!!")
-    elif computerShotDirection=="right" and playerKeeperDive=="left":
+    elif computerShotDirection=="right" and playerTendeyDive=="left":
         print ("It's a SSSAVVVVEEEEE!!!!!!")
-    elif computerShotDirection=="middle" and playerKeeperDive=="middle":
+    elif computerShotDirection=="middle" and playerTendeyDive=="middle":
         print ("It's a SSSAVVVVEEEEE!!!!!!")
     else:
         print("It's a Goal!!!!")
         computerTeamScore+=1
 
 def printScores():
-    print("The score is now USER:"+str(userTeamScore)+" "+"COMPUTER:"+str(computerTeamScore))
+    print("The score is now USER:"+str(PlayerScore)+" "+"COMPUTER:"+str(CpuScore))
 
 def finalScore():
-    print("FINAL SCORE "+str(userTeamScore) +"-" +str(computerTeamScore)) 
-    if userTeamScore>computerTeamScore:
+    print("FINAL SCORE "+str(PlayerScore) +"-" +str(CpuScore)) 
+    if PlayerScore>CpuScore:
         print ("Well done you won")
-    elif userTeamScore==computerTeamScore:
+    elif PlayerScore==CpuScore:
         print("A draw")
     else:
         print("You Lose") 

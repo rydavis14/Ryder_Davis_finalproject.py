@@ -22,7 +22,6 @@ def __init__(self):
     self.image = self.image = pg.image.load(os.path.join(img_folder, 'pologoal.png')).convert()
 
 
-
 # Set up the display
 width, height = 800, 600
 screen = pygame.display.set_mode((width, height))
