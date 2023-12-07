@@ -52,8 +52,8 @@ This project is licensed under the MIT License
 
 Inspiration, code snippets, etc.
 Mr. Chris Cozort
-https://www.youtube.com/watch?v=gJnUTX00Z9k
 https://trinket.io/python/909d6c5804
 Chat GbT
+https://www.youtube.com/watch?v=Qf3-aDXG8q4
 
 
