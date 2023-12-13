@@ -56,4 +56,5 @@ https://trinket.io/python/909d6c5804
 Chat GbT
 https://www.youtube.com/watch?v=Qf3-aDXG8q4
 
+https://www.youtube.com/watch?v=E4Ih9mpn5tk 
 
