@@ -5,7 +5,11 @@ A soccer pygame wear you play against AI
 ## Description
 
 An in-depth paragraph about your project and overview of use.
+
+
+
 '''
+I created a game that is a water air hockey game. I added a blue background for the water and you score a point when maiking it past the opponets blocker. 
 I want To create a game where you shoot a ball into a goal
 I want to create mobs that repesent shot blocker that are moving up and down
 I want to also create a AI goalie that you play against when you shoot
