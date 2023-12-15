@@ -1,6 +1,6 @@
 # Fall2023_final_project
 
-A soccer pygame wear you play against AI
+A air hockey water polo pygame where you play against AI
 
 ## Description
 
