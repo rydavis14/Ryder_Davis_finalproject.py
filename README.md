@@ -7,10 +7,11 @@ A soccer pygame wear you play against AI
 An in-depth paragraph about your project and overview of use.
 '''
 I want To create a game where you shoot a ball into a goal
-I want to create mobs that repesent shot blocker that are moving left and right
-I want to create an image of a goal net as a background image
+I want to create mobs that repesent shot blocker that are moving up and down
 I want to also create a AI goalie that you play against when you shoot
 I want to create mobs that are tagrets in the goal.
+I want to create a scoreboard and shot timer
+
 '''
 
 ## Getting Started
