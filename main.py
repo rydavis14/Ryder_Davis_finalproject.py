@@ -16,7 +16,6 @@ import pygame, sys, random
 
 def ball_animation():
     global ball_speed_x, ball_speed_y, player_score, opponent_score, score_timer
-    
     ball.x += ball_speed_x
     ball.y += ball_speed_y
 # reverses both axis ball speed speratley 
@@ -30,7 +29,6 @@ def ball_animation():
         player_score += 1
         #How much time the game has been running
         score_timer = pygame.time.get_ticks()
-
     #when opponet scores
     if ball.right >= screen_width:
         # horizontal ball speed
